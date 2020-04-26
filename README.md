@@ -8,8 +8,8 @@ export default {
 批量翻译引号里面的内容
 
 # 使用方法
-1.git clone https://github.com/oiltofu/translator2.git
-2.cd translator2
-3.npm i ==> npm run fanyi
-  或者
-  yarn ==> yarn fanyi
+1.git clone https://github.com/oiltofu/translator2.git  
+2.cd translator2  
+3.npm i ==> npm run fanyi  
+  或者  
+  yarn ==> yarn fanyi  
