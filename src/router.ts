@@ -12,17 +12,17 @@ router.get('/', (req, res) => {
         <form method="post" action="/translate">
           from
           <select name="from">
-            <option value="zh-CN">zh-CN</option>
+            <option value="zh">zh</option>
             <option value="en">en</option>
-            <option value="ja">ja</option>
-            <option value="zh-TW">zh-TW</option>
+            <option value="jp">jp</option>
+            <option value="cht">cht</option>
           </select>
           to
           <select name="to">
-            <option value="zh-TW">zh-TW</option>
-            <option value="zh-CN">zh-CN</option>
+            <option value="cht">cht</option>
+            <option value="zh">zh</option>
             <option value="en">en</option>
-            <option value="ja">ja</option>
+            <option value="jp">jp</option>
           </select>
           <textarea style="display: block; margin: 0 auto; margin-top: 36px;" name="content" rows="30" cols="180" placeholder="要翻译的内容"></textarea>
           <div style="margin-top: 36px;">
