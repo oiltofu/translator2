@@ -60,7 +60,7 @@ router.get('/getData', (req, res) => {
     `)
   } else {
     res.send(`
-      <textarea style="display: block; margin: 0 auto; margin-top: 36px;" name="content" rows="30" cols="180" readonly>${crawler.resList.join("'")}</textarea>
+      <textarea style="display: block; margin: 0 auto; margin-top: 36px;" name="content" rows="30" cols="180" readonly>${crawler.resList.join(`"`)}</textarea>
     `)
   }
 })
