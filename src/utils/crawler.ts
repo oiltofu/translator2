@@ -7,7 +7,7 @@ export default class Crawler {
   contentList: string[] = []
   loading = false
   resList: string[] = []
-  index: number = 1
+  index: number = 3
   constructor(from: string, to: string, content: string) {
     this.from = from
     this.to = to
@@ -57,7 +57,7 @@ export default class Crawler {
           await page.keyboard.press('ArrowLeft');
           await page.keyboard.up('Shift');
           await page.keyboard.press('Backspace');
-          this.index = this.index + 2
+          this.index = this.index + 4
           if (this.index + 1 < this.contentList.length) {
             setTimeout(() => {
               this.typeWord(page, this.contentList[this.index])
@@ -85,7 +85,7 @@ export default class Crawler {
     page.setDefaultNavigationTimeout(0)
     await page.goto(baseUrl)
     this.addListen(browser, page)
-    this.contentList = this.content.split("'")
+    this.contentList = this.content.split(`"`)
     this.typeWord(page, this.contentList[this.index])
   }
 }
